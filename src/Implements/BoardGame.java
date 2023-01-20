@@ -42,7 +42,7 @@ public class BoardGame {
             } else if (s.equals("R")) {
                 y++;
             }
-            if (x<0||y<0||x>board.length||y>board.length) return null;
+            if (x<0||y<0||x>=board.length||y>=board.length) return null;
             if(board[x][y]==1) result++;
         }
         return result;
